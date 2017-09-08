@@ -43,21 +43,26 @@
 		<a-scene class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
 
 
-			<a-assets>
-   				 <img id="Chair45Texture" crossorigin="anonymous" src="/master/Chair46VRayCompleteMap.png">
+  			<a-assets>
+  				<a-asset-item id="Room" src="https://cdn.rawgit.com/mpjaco/text/master/Room.DAE"></a-asset-item>
+			    <a-asset-item id="Chair45" src="https://cdn.rawgit.com/mpjaco/text/master/Chair45.DAE"></a-asset-item>
+			    <a-asset-item id="Chair46" src="https://cdn.rawgit.com/mpjaco/text/master/Chair45.DAE"></a-asset-item>
+			 	<img id="Chair45Texture" src="https://raw.githubusercontent.com/mpjaco/text/master/Chair46VRayCompleteMap.png">
   			</a-assets>
 
 
-			<a-entity collada-model="https://cdn.rawgit.com/mpjaco/text/master/Room.DAE" position="0 0 2"></a-entity>
+  			<a-collada-model src="#Room" position="0 0 2"></a-collada-model>
 
-			<a-entity collada-model="https://cdn.rawgit.com/mpjaco/text/master/Chair45.DAE" 
+			
+
+			<a-collada-model src="#Chair45" 
 				event-set__enter="_event: mouseenter; color: #8FF7FF" 
 				event-set__leave="_event: mouseleave; color: #4CC3D9"
 				position="0.509 0 0.759"
 				material="src: #Chair45Texture"
 				rotation="0 -28.590593977028078 0">
            			
-       			<a-text 
+       			<a-text	
        				id="Chair45_Text" 
        				text="align:center;alphaTest:-0.32;color:#5b8ad7;tabSize:3.16;value:? ; width:1.85;wrapCount:39.82" 
        				position="0.999 1.516 -0.33" 
@@ -66,7 +71,9 @@
        				rotation="0 -9.740282517223996 0">
 	            </a-text>   
 	            <a-animation attribute="rotation" begin="click" repeat="indefinite" to="0 360 0"></a-animation>
-       		</a-entity>
+       		</a-collada-model>
+
+
 
        		<a-entity collada-model="https://cdn.rawgit.com/mpjaco/text/master/Chair46.DAE" position="-1.66 0 0.686" rotation="0 29.965692685342056 0">
    				<a-text id="Chair46_Text" text="align:center;alphaTest:-0.32;color:#5b8ad7;tabSize:3.16;value:?;width:1.85;wrapCount:39.82" position="0.021 1.127 -0.187" geometry="radius: 0.07; primitive: circle"; material="color:#333" rotation="0 15.469860468532229 0">
