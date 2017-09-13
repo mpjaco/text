@@ -1,0 +1,198 @@
+{
+    "accessors": {
+        "accessor_16": {
+            "bufferView": "bufferView_22",
+            "byteOffset": 0,
+            "byteStride": 0,
+            "componentType": 5123,
+            "count": 36,
+            "type": "SCALAR"
+        },
+        "accessor_18": {
+            "bufferView": "bufferView_23",
+            "byteOffset": 0,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 24,
+            "max": [
+                0.0254,
+                0.0254,
+                0.0254
+            ],
+            "min": [
+                -0.0254,
+                -0.0254,
+                -0.0254
+            ],
+            "type": "VEC3"
+        },
+        "accessor_20": {
+            "bufferView": "bufferView_23",
+            "byteOffset": 288,
+            "byteStride": 12,
+            "componentType": 5126,
+            "count": 24,
+            "max": [
+                1,
+                1,
+                1
+            ],
+            "min": [
+                -1,
+                -1,
+                -1
+            ],
+            "type": "VEC3"
+        }
+    },
+    "animations": {},
+    "asset": {
+        "generator": "collada2gltf@cf6371beb0bdc18ba603378d5e40c966da53d385",
+        "premultipliedAlpha": true,
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.2"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferView_22": {
+            "buffer": "Cube",
+            "byteLength": 72,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        "bufferView_23": {
+            "buffer": "Cube",
+            "byteLength": 576,
+            "byteOffset": 72,
+            "target": 34962
+        }
+    },
+    "buffers": {
+        "Cube": {
+            "byteLength": 648,
+            "type": "arraybuffer",
+            "uri": "Cube.bin"
+        }
+    },
+    "extensionsUsed": [
+        "KHR_materials_common"
+    ],
+    "materials": {
+        "Material_001-effect": {
+            "extensions": {
+                "KHR_materials_common": {
+                    "doubleSided": false,
+                    "jointCount": 0,
+                    "technique": "PHONG",
+                    "transparent": false,
+                    "values": {
+                        "ambient": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "diffuse": [
+                            0.64,
+                            0.64,
+                            0.64,
+                            1
+                        ],
+                        "emission": [
+                            0,
+                            0,
+                            0,
+                            1
+                        ],
+                        "shininess": 50,
+                        "specular": [
+                            0.5,
+                            0.5,
+                            0.5,
+                            1
+                        ]
+                    }
+                }
+            },
+            "name": "Material_001"
+        }
+    },
+    "meshes": {
+        "Cube_003-mesh": {
+            "name": "Cube.003",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": "accessor_20",
+                        "POSITION": "accessor_18"
+                    },
+                    "indices": "accessor_16",
+                    "material": "Material_001-effect",
+                    "mode": 4
+                }
+            ]
+        }
+    },
+    "nodes": {
+        "Cube": {
+            "children": [],
+            "matrix": [
+                30,
+                0,
+                0,
+                0,
+                0,
+                30,
+                0,
+                0,
+                0,
+                0,
+                30,
+                0,
+                0,
+                0,
+                0.762,
+                1
+            ],
+            "meshes": [
+                "Cube_003-mesh"
+            ],
+            "name": "Cube"
+        },
+        "node_1": {
+            "children": [
+                "Cube"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_1"
+            ]
+        }
+    },
+    "skins": {}
+}

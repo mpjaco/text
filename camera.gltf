@@ -1,0 +1,103 @@
+{
+    "accessors": {},
+    "animations": {},
+    "asset": {
+        "generator": "collada2gltf@cf6371beb0bdc18ba603378d5e40c966da53d385",
+        "premultipliedAlpha": true,
+        "profile": {
+            "api": "WebGL",
+            "version": "1.0.2"
+        },
+        "version": "1.0"
+    },
+    "bufferViews": {
+        "bufferView_2": {
+            "buffer": "camera",
+            "byteLength": 0,
+            "byteOffset": 0,
+            "target": 34963
+        },
+        "bufferView_3": {
+            "buffer": "camera",
+            "byteLength": 0,
+            "byteOffset": 0,
+            "target": 34962
+        }
+    },
+    "buffers": {},
+    "cameras": {
+        "Camera-camera": {
+            "name": "Camera",
+            "perspective": {
+                "aspect_ratio": 1.33333,
+                "yfov": 0.643167,
+                "zfar": 50.8,
+                "znear": 0.254
+            },
+            "type": "perspective"
+        }
+    },
+    "extensionsUsed": [
+        "KHR_materials_common"
+    ],
+    "materials": {},
+    "meshes": {},
+    "nodes": {
+        "Camera": {
+            "camera": "Camera-camera",
+            "children": [],
+            "matrix": [
+                0.999607,
+                0.0280335,
+                -6.51038e-005,
+                0,
+                -0.00687613,
+                0.247436,
+                0.96888,
+                0,
+                0.0271772,
+                -0.968499,
+                0.247532,
+                0,
+                -0.063568,
+                -12.5961,
+                4.00862,
+                1
+            ],
+            "name": "Camera"
+        },
+        "node_1": {
+            "children": [
+                "Camera"
+            ],
+            "matrix": [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "name": "Y_UP_Transform"
+        }
+    },
+    "scene": "defaultScene",
+    "scenes": {
+        "defaultScene": {
+            "nodes": [
+                "node_1"
+            ]
+        }
+    },
+    "skins": {}
+}
