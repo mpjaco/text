@@ -11,7 +11,7 @@
 	<up_axis>Z_UP</up_axis>
 </asset>
 <library_images>
-	<image id="id-image-3" name="fabric.jpg">
+	<image id="id-image-3" name="RoomVRayCompleteMap.png">
 		<init_from>https://raw.githubusercontent.com/mpjaco/text/master/RoomVRayCompleteMap.png</init_from>
 	</image>
 </library_images>
