@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+<asset>
+	<contributor>
+		<author>Anonymous</author>
+		<authoring_tool>Collada Exporter for Blender 2.6+, by Juan Linietsky (juan@codenix.com)</authoring_tool>
+	</contributor>
+	<created>2017-09-14T14:50:59Z</created>
+	<modified>2017-09-14T14:50:59Z</modified>
+	<unit meter="1.0" name="meter"/>
+	<up_axis>Z_UP</up_axis>
+</asset>
+<library_cameras>
+	<camera id="id-camera-2" name="Camera">
+		<optics>
+			<technique_common>
+				<perspective>
+					<yfov>35.48934190849526</yfov>
+					<aspect_ratio>1.3333333333333333</aspect_ratio>
+					<znear>5.0</znear>
+					<zfar>3000.0</zfar>
+				</perspective>
+			</technique_common>
+		</optics>
+	</camera>
+</library_cameras>
+<library_visual_scenes>
+	<visual_scene id="id-scene-1" name="scene">
+		<node id="Camera" name="Camera" type="NODE">
+			<matrix sid="transform"> 0.9562384486198425 -0.122893325984478 0.26552829146385193 145.5552215576172 0.2925885021686554 0.40163758397102356 -0.8678013682365417 -519.2881469726562 8.5495707935479e-07 0.9075155258178711 0.4200184643268585 283.5028381347656 0.0 0.0 0.0 1.0  </matrix>
+			<instance_camera url="#id-camera-2"/>
+		</node>
+	</visual_scene>
+</library_visual_scenes>
+<scene>
+	<instance_visual_scene url="#id-scene-1" />
+</scene>
+</COLLADA>
